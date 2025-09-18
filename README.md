@@ -1,18 +1,52 @@
-## Getting Started
+# Projeto Animais
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto Java simples permite cadastrar animais (cachorro e gato), informando nome, idade e tipo, utilizando um menu interativo no terminal.
 
-## Folder Structure
+## Estrutura de Pastas
 
-The workspace contains two folders by default, where:
+- `src/Model`: contém as classes dos animais (`Animais`, `Cachorro`, `Gato`)
+- `src/Main.java`: classe principal com o menu de cadastro
+- `lib`: pasta para dependências externas
+- `bin`: pasta para arquivos compilados
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Executar
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Compile os arquivos Java:
+   ```sh
+   javac -d bin src/Model/*.java src/Main.java
+   ```
+2. Execute o programa:
+   ```sh
+   java -cp bin Main
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Funcionalidades
 
-## Dependency Management
+- Cadastro de animais (cachorro ou gato)
+- Informar nome e idade
+- Exibir informações e emitir som característico
+- Menu interativo para múltiplos cadastros
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Exemplo de Uso
+
+```
+Escolha o animal (1 - Cachorro, 2 - Gato):
+1
+Digite o nome do animal: Rex
+Digite a idade do animal: 5
+Animal criado:
+Nome: Rex
+Idade: 5
+O cachorro late: Au Au!
+Deseja cadastrar outro animal? (s/n): n
+Programa encerrado.
+```
+
+## Requisitos
+
+- Java 8 ou superior
+- Visual Studio Code (opcional)
+
+---
+
+Projeto desenvolvido para fins de aprendizado.
